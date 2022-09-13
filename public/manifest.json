@@ -1,15 +1,16 @@
 {
   "manifestVersion": 1,
-  "id": "plugin_template",
-  "name": "Plugin Template",
-  "author": "remnote",
-  "repoUrl": "",
+  "id": "nationality_predictor",
+  "name": "Nationality Predictor",
+  "author": "Howard Warren",
+  "repoUrl": "https://github.com/howardwarren1982/nationality_predictor",
+  "enableOnMobile": true,
   "version": {
     "major": 0,
     "minor": 0,
     "patch": 1
   },
-  "description": "",
+  "description": "test",
   "requestNative": false,
   "requiredScopes": [
     {
