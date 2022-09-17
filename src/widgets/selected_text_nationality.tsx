@@ -1,5 +1,6 @@
 import { usePlugin, renderWidget, useTracker, SelectionType } from '@remnote/plugin-sdk';
 import React from 'react';
+import NationalityData from '../components/NationalityData';
 
 export function useDebounce<T>(value: T, msDelay: number) {
   const [debouncedValue, setDebouncedValue] = React.useState<T>(value);
@@ -54,7 +55,19 @@ function SelectedTextNationality() {
     getAndSetData();
   }, [searchTerm]);
 
-  return <pre>{JSON.stringify(nameData, null, 2)}</pre>;
+  return (
+    <div className="flex">
+      {nameData?.map((data) => {
+        return (
+          <NationalityData
+            flag={data['country_id']}
+            country={data['country_id']}
+            percent={data['probability']}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 renderWidget(SelectedTextNationality);

@@ -1,4 +1,8 @@
-const getFlagIcon = function (code: string) {
-  const output = `https://purecatamphetamine.github.io/country-flag-icons/3x2/${code}.svg`;
+export const getFlagIcon = function (code: string) {
+  const output = `https://countryflagsapi.com/svg/${code}`;
   return output;
+};
+
+export const convertToThreeDigitPercent = function (input: number) {
+  return Math.round(input * 100);
 };

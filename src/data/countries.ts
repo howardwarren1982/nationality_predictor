@@ -1,4 +1,4 @@
-const countries = {
+export const countries = {
   AF: 'Afghanistan',
   AX: 'Aland Islands',
   AL: 'Albania',
