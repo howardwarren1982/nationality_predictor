@@ -1,6 +1,6 @@
 ## Features
 
-- predicts the nationality of a person given their name.
+- Predicts the nationality of a person given their name.
 
 ## How to Use
 
@@ -10,6 +10,6 @@
 
 Howard Warren
 
-Send your suggestions/comments to: howardwarren@gmail.com
+Send your suggestions/comments to: howardwarren89@gmail.com
 
 This plugin is powered by nationalize.io
