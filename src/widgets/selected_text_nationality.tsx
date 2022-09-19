@@ -47,8 +47,9 @@ function SelectedTextNationality() {
         });
         const json = await response.json();
         setNameData(Array.isArray(json?.country) ? json?.country : undefined);
-      } catch (e) {
+      } catch (e: any) {
         console.log('Error getting info: ', e);
+        setNameData(e.message);
       }
     };
 

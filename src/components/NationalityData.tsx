@@ -1,9 +1,16 @@
-import React from 'react';
 import { getFlagIcon } from '../../utils/functions';
 import { convertToThreeDigitPercent } from '../../utils/functions';
 import { countries } from './../data/countries';
 
-const NationalityData = ({ flag, country, percent }) => {
+const NationalityData = ({
+  flag,
+  country,
+  percent,
+}: {
+  flag: string;
+  country: string;
+  percent: number;
+}) => {
   return (
     <div className="flex items-start justify-between p-1">
       <div className="flex items-center gap-4">
