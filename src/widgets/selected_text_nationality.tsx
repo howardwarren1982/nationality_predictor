@@ -57,17 +57,20 @@ function SelectedTextNationality() {
   }, [searchTerm]);
 
   return (
-    <div className="flex">
-      {nameData?.map((data) => {
-        return (
-          <NationalityData
-            flag={data['country_id']}
-            country={data['country_id']}
-            percent={data['probability']}
-          />
-        );
-      })}
-    </div>
+    <>
+      <h6 className="text-sm pl-0.5">Nationality prediction</h6>
+      <div className="flex flex-wrap">
+        {nameData?.map((data) => {
+          return (
+            <NationalityData
+              flag={data['country_id']}
+              country={data['country_id']}
+              percent={data['probability']}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 }
 
