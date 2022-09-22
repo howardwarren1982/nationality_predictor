@@ -18,7 +18,7 @@ export function useDebounce<T>(value: T, msDelay: number) {
 function SelectedTextNationality() {
   const plugin = usePlugin();
 
-  const [nameData, setNameData] = React.useState<string>();
+  const [nameData, setNameData] = React.useState<Array<any>>([]);
 
   const searchTerm = useDebounce(
     useTracker(async (reactivePlugin) => {
@@ -60,7 +60,7 @@ function SelectedTextNationality() {
     <>
       <h6 className="text-sm pl-0.5">Nationality prediction</h6>
       <div className="flex flex-wrap">
-        {nameData?.map((data) => {
+        {nameData?.map((data: { [key: string]: any }) => {
           return (
             <NationalityData
               flag={data['country_id']}
