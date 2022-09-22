@@ -4,7 +4,7 @@
 
 ## How to Use
 
-- Left click and drag to highlight a name. In the selected word menu you will see the plug-in. when you click the plug-in the top three possible nationalities for the person with the given name will display.
+- Left click and drag to highlight a name. In the selected word menu you will see the plug-in. when you click the plug-in the top possible nationalities for the person with the given name will display.
 
 ## Developer
 
