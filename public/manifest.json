@@ -8,14 +8,14 @@
   "version": {
     "major": 0,
     "minor": 0,
-    "patch": 1
+    "patch": 2
   },
-  "description": "test",
+  "description": "Predicts the nationality of a person given their name.",
   "requestNative": false,
   "requiredScopes": [
     {
       "type": "All",
-      "level": "ReadCreateModify"
+      "level": "Read"
     }
   ]
 }
